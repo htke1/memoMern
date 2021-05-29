@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url ="https://my-mern-pro.herokuapp.com/"
+const url ="https://memo-redux.herokuapp.com/"
 
 export const fetchPost = () => axios.get(url)
 export const createPost = (newPost) => axios.post(url,newPost)
