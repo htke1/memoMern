@@ -24,7 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run export",
+    "export": "next build && next export",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

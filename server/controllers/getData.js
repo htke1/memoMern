@@ -9,7 +9,7 @@ export const getData =  async (req,res)=>{
         res.status(404).json({message:error.message})
     }
     }
-
+v 
 export const createData = async (req,res)=>{
     
     const Post = req.body

@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url ="http://localhost:5000/getData"
+const url ="https://my-mern-pro.herokuapp.com/"
 
 export const fetchPost = () => axios.get(url)
 export const createPost = (newPost) => axios.post(url,newPost)
