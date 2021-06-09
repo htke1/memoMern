@@ -7,11 +7,15 @@ import useStyles from './styles.js'
 import {useDispatch} from 'react-redux'
 import {useEffect,useState} from 'react'
 import { getPost } from './actions/post.js'
+import {GlobalStyles} from './themes/global.js'
+import {nba, fifa, anime, classic} from './themes/theme.js'
+import {ThemeProvider} from 'styled-components'
 function App() {
+
   const [currentId, setCurrentId] = useState(0);
   const dispatch = useDispatch()
   const classes = useStyles()
-
+ 
   useEffect(()=>{
     dispatch(getPost())
 
